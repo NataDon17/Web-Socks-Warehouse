@@ -13,5 +13,7 @@
 
 ## Используемые технологии и библиотеки:
 Язык и окружение: Java 17, Maven, Spring Boot/Web, Hibernate, Liquibase, PostgreSQL, Lombok
+
 Тестирование: JUnit, Mockito, TestContainers
+
 Прочее: Docker, Swagger
