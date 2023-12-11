@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Donskaya
+      changes:
+        - tagDatabase:
+            tag: 1.0
+        - createTable:
+            tableName: socks
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: color
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cotton_part
+                  type: int
+                  constraints:
+                    minimum: 0
+                    maximum: 100
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: int
+                  constraints:
+                    nullable: false
